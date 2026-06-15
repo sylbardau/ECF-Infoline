@@ -1,4 +1,4 @@
-module "vpc" {
+module "VPC" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "~> 6.6.1" # [lastet version - Source : https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest]
 
