@@ -11,5 +11,13 @@ module "EKS" {
 #ajout des variables
   vpc_id          = module.VPC.vpc_id
   private_subnets = module.VPC.private_subnets
-
 }
+
+module "RDS" {
+  source = "./RDS"
+
+#ajout des variables
+  vpc_id          = module.VPC.vpc_id
+  private_subnets = module.VPC.private_subnets
+}
+
