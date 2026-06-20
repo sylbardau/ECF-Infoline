@@ -6,7 +6,7 @@ resource "aws_security_group" "rds" {
   ingress {
     description = "PostgreSQL depuis le VPC"
     from_port   = 5432
-    to_port     = 35432
+    to_port     = 5432
     protocol    = "tcp"
     cidr_blocks = ["10.0.0.0/16"] # uniquement depuis le VPC
   }
