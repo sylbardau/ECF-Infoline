@@ -4,9 +4,9 @@ resource "aws_security_group" "rds" {
   vpc_id      = var.vpc_id
 
   ingress {
-    description = "MySQL depuis le VPC"
-    from_port   = 3306
-    to_port     = 3306
+    description = "PostgreSQL depuis le VPC"
+    from_port   = 5432
+    to_port     = 35432
     protocol    = "tcp"
     cidr_blocks = ["10.0.0.0/16"] # uniquement depuis le VPC
   }
@@ -25,26 +25,19 @@ resource "aws_db_subnet_group" "rds" {
   subnet_ids = var.private_subnets
 }
 
-# Mot de passe généré aléatoirement — jamais en clair dans le code !
-resource "random_password" "rds" {
-  length  = 16
-  special = false # MySQL a des restrictions sur certains caractères spéciaux
-}
-
 module "RDS" {
   source  = "terraform-aws-modules/rds/aws"
-  version = "~> 7.2.0"
+  version = "~> 7.2.0" # [lastet version - Source : https://registry.terraform.io/modules/terraform-aws-modules/rds/aws/latest]
 
   identifier = "infoline-db" 
 
-  engine            = "mysql"
-  engine_version    = "8.0"
-  instance_class    = "db.t3.micro"
-  allocated_storage = 20  # minimum recommandé : 20 Go 
+  instance_class = "db.t3.micro"
+  engine               = "postgres"
+  engine_version       = "15"        
+  major_engine_version = "15"
+  family               = "postgres15"
 
-  major_engine_version = "8.0"
-  family               = "mysql8.0"
-
+  
   db_name  = "infolinedb"
   username = "admininfoline"
   
@@ -56,6 +49,7 @@ module "RDS" {
   # Sauvegardes
   backup_retention_period = 7     # 7 jours de rétention
   skip_final_snapshot     = false # snapshot avant suppression
+  final_snapshot_identifier_prefix = "infoline-db-final"
 
   # Pas de Multi-AZ pour limiter les coûts (à activer en prod)
   multi_az = false
