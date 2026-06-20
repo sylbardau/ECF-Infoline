@@ -21,3 +21,11 @@ module "RDS" {
   private_subnets = module.VPC.private_subnets
 }
 
+module "lambda" {
+  source = "./lambda"
+
+#ajout des variables
+  lambda_handler = "com.infoline.LoginHandler::handleRequest" # [À PERSONNALISER PAR L'EQUIPE DE DEV]
+  environment    = var.environment
+  db_endpoint    = module.RDS.db_instance_endpoint
+}
