@@ -4,9 +4,13 @@ on:
   push:
     branches:
       - DEV
+    paths:
+      - 'Applications/Backend/**'
   pull_request:
     branches:
       - main
+    paths:
+      - 'Applications/Backend/**'
 
 env:
   AWS_REGION: eu-west-3
