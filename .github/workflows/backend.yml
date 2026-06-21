@@ -2,10 +2,10 @@ name: Backend CI
 
 on:
   push:
-    branches: 
+    branches:
       - DEV
   pull_request:
-    branches: 
+    branches:
       - main
 
 env:
@@ -36,3 +36,4 @@ jobs:
         with:
           name: test-results
           path: target/surefire-reports/
+          

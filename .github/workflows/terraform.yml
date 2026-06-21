@@ -2,10 +2,10 @@ name: Terraform CI
 
 on:
   push:
-    branches: 
+    branches:
       - AWS
   pull_request:
-    branches: 
+    branches:
       - main
 
 env:
