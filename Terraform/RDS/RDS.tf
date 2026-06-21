@@ -37,7 +37,6 @@ module "RDS" {
   major_engine_version = "15"
   family               = "postgres15"
 
-
   db_name  = "infolinedb"
   username = "admininfoline"
 
