@@ -30,6 +30,7 @@ jobs:
 
       - name: Build et tests Maven
         run: mvn clean verify -B
+        working-directory: Applications/Backend/
 
       - name: Publication des résultats de tests
         uses: actions/upload-artifact@v4
