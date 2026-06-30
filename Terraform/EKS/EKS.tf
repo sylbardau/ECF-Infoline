@@ -8,12 +8,16 @@ module "EKS" {
   vpc_id     = var.vpc_id
   subnet_ids = var.private_subnets
 
+  endpoint_public_access  = true
+  endpoint_private_access = true
+
+
   eks_managed_node_groups = {
     default = {
       min_size       = 1
       max_size       = 3
       desired_size   = 2
-      instance_types = ["t3.micro"] # diminution des couts pour l'ECF ( choisir une T3.modium pour une vrais prod)
+      instance_types = ["t3.small"] # diminution des couts pour l'ECF ( choisir une T3.modium pour une vrais prod)
     }
   }
 }

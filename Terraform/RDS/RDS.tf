@@ -36,6 +36,7 @@ module "RDS" {
   engine_version       = "15"
   major_engine_version = "15"
   family               = "postgres15"
+  allocated_storage    = 20
 
   db_name  = "infolinedb"
   username = "admininfoline"
@@ -46,9 +47,9 @@ module "RDS" {
   db_subnet_group_name   = aws_db_subnet_group.rds.name
 
   # Sauvegardes
-  backup_retention_period          = 7     # 7 jours de rétention
-  skip_final_snapshot              = false # snapshot avant suppression
-  final_snapshot_identifier_prefix = "infoline-db-final"
+  backup_retention_period = 0    # passer a 7 pour avoir 7 jours de rétention en prod
+  skip_final_snapshot     = true # snapshot avant suppression passer en false en prod
+  #final_snapshot_identifier_prefix = "infoline-db-final" # a activer en prod
 
   # Pas de Multi-AZ pour limiter les coûts (à activer en prod)
   multi_az = false
