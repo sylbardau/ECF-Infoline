@@ -16,7 +16,7 @@ resource "aws_iam_role" "lambda_exec" {
 resource "aws_security_group" "lambda" {
   name   = "infoline-lambda-sg"
   vpc_id = var.vpc_id
- 
+
   egress {
     description = "PostgreSQL vers RDS"
     from_port   = 5432
@@ -24,7 +24,7 @@ resource "aws_security_group" "lambda" {
     protocol    = "tcp"
     cidr_blocks = ["10.0.0.0/16"]
   }
- 
+
   egress {
     description = "HTTPS vers Secrets Manager / internet"
     from_port   = 443
@@ -33,7 +33,7 @@ resource "aws_security_group" "lambda" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
- 
+
 resource "aws_iam_role_policy_attachment" "lambda_basic" {
   policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
   role       = aws_iam_role.lambda_exec.name
