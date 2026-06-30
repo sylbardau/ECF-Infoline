@@ -28,4 +28,6 @@ module "lambda" {
   lambda_handler = "com.infoline.LoginHandler::handleRequest" # [À PERSONNALISER PAR L'EQUIPE DE DEV]
   environment    = var.environment
   db_endpoint    = module.RDS.db_instance_endpoint
+  vpc_id          = module.VPC.vpc_id
+  private_subnets = module.VPC.private_subnets
 }
