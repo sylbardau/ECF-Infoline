@@ -12,6 +12,28 @@ resource "aws_iam_role" "lambda_exec" {
   })
 }
 
+# Security group pour la Lambda (sortie vers RDS uniquement)
+resource "aws_security_group" "lambda" {
+  name   = "infoline-lambda-sg"
+  vpc_id = var.vpc_id
+ 
+  egress {
+    description = "PostgreSQL vers RDS"
+    from_port   = 5432
+    to_port     = 5432
+    protocol    = "tcp"
+    cidr_blocks = ["10.0.0.0/16"]
+  }
+ 
+  egress {
+    description = "HTTPS vers Secrets Manager / internet"
+    from_port   = 443
+    to_port     = 443
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+ 
 resource "aws_iam_role_policy_attachment" "lambda_basic" {
   policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
   role       = aws_iam_role.lambda_exec.name
@@ -30,6 +52,11 @@ resource "aws_lambda_function" "login" {
 
   memory_size = 512 # Java nécessite plus de mémoire que Node/Python
   timeout     = 30
+
+  vpc_config {
+    subnet_ids         = var.private_subnets
+    security_group_ids = [aws_security_group.lambda.id]
+  }
 
   environment {
     variables = {
