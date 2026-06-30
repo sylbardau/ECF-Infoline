@@ -1,10 +1,10 @@
 # versions.tf
 terraform {
-  required_version = ">= 1.15" # [À VÉRIFIER - Source : https://developer.hashicorp.com/terraform/downloads]
+  required_version = ">= 1.15" # [Source : https://developer.hashicorp.com/terraform/downloads]
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 6.50" # [À VÉRIFIER - Source : https://registry.terraform.io/providers/hashicorp/aws/latest]
+      version = "~> 6.50" # [Source : https://registry.terraform.io/providers/hashicorp/aws/latest]
     }
   }
 }

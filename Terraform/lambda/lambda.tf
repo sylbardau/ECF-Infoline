@@ -24,7 +24,7 @@ resource "aws_lambda_function" "login" {
   runtime       = "java21"
   handler       = var.lambda_handler # Variable a metre a jour par l'equipe de dev 
 
-  # Le JAR est fourni par l'équipe dev - chemin à adapter
+  # Le JAR est fourni par l'équipe dev 
   filename         = "${path.module}/login.jar"
   source_code_hash = filebase64sha256("${path.module}/login.jar")
 
