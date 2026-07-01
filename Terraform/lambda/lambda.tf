@@ -46,7 +46,7 @@ variable "deploy_lambda_function" {
 
 # Fonction Lambda
 resource "aws_lambda_function" "login" {
-  count = var.deploy_lambda_function ? 1 : 0 # 
+  count         = var.deploy_lambda_function ? 1 : 0 # 
   function_name = "infoline-login"
   role          = aws_iam_role.lambda_exec.arn
   runtime       = "java21"
