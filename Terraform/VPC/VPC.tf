@@ -16,7 +16,7 @@ module "VPC" {
 resource "aws_security_group" "sg_eks_nodes" {
   name        = "sg_eks_nodes"
   description = "Groupe de securite pour les nodes EKS"
-  vpc_id      =  module.VPC.vpc_id
+  vpc_id      = module.VPC.vpc_id
 
   # Communication entre nodes du cluster
   ingress {

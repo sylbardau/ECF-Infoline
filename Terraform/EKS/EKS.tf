@@ -12,7 +12,7 @@ module "EKS" {
   endpoint_private_access = true
 
   compute_config = {
-   enabled = false
+    enabled = false
   }
 
   addons = {
@@ -32,13 +32,13 @@ module "EKS" {
   eks_managed_node_groups = {
     default = {
       kubernetes_version = "1.36"
-      min_size       = 1
-      max_size       = 3
-      desired_size   = 2
-      instance_types = ["t3.small"] # diminution des couts pour l'ECF ( choisir une T3.medium pour une vrais prod)
+      min_size           = 1
+      max_size           = 3
+      desired_size       = 2
+      instance_types     = ["t3.small"] # diminution des couts pour l'ECF ( choisir une T3.medium pour une vrais prod)
 
       iam_role_additional_policies = {
-       AmazonSSMManagedInstanceCore = "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
+        AmazonSSMManagedInstanceCore = "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
       }
     }
   }
