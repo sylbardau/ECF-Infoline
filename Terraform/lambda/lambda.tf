@@ -39,8 +39,14 @@ resource "aws_iam_role_policy_attachment" "lambda_basic" {
   role       = aws_iam_role.lambda_exec.name
 }
 
+variable "deploy_lambda_function" {
+  type    = bool
+  default = false # passer en true une fois la fonction livrée
+}
+
 # Fonction Lambda
 resource "aws_lambda_function" "login" {
+  count = var.deploy_lambda_function ? 1 : 0 # 
   function_name = "infoline-login"
   role          = aws_iam_role.lambda_exec.arn
   runtime       = "java21"
