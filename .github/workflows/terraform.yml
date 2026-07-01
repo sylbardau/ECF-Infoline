@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - AWS
+      - main
   pull_request:
     branches:
       - main
