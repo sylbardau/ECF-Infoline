@@ -46,6 +46,7 @@ jobs:
   build-and-push:
     name: build & push image ECR
     runs-on: ubuntu-latest
+    environment: production
     needs: test
     if: github.ref == 'refs/heads/DEV' && github.event_name == 'push'
     outputs:
