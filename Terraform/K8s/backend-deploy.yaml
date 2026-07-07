@@ -1,0 +1,111 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: infoline
+ 
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: infoline-backend-config
+  namespace: infoline
+data:
+  SPRING_PROFILES_ACTIVE: "dev" # aligné sur var.environment (Terraform/variable.tf)
+  SPRING_APPLICATION_NAME: "backend"
+  # Host RDS = output "db_instance_endpoint" du module RDS (Terraform/RDS/outputs.tf)
+  SPRING_DATASOURCE_URL: "jdbc:postgresql://<DB_HOST>/infolinedb"
+ 
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: infoline-backend
+  namespace: infoline
+  labels:
+    app: infoline-backend
+spec:
+  replicas: 2 # aligné sur desired_size du node group EKS (EKS.tf)
+  selector:
+    matchLabels:
+      app: infoline-backend
+  template:
+    metadata:
+      labels:
+        app: infoline-backend
+    spec:
+      containers:
+        - name: backend
+          # Repo ECR "infoline-api" (backend.yml) - compte 965932218164 / région eu-west-3
+          image: 965932218164.dkr.ecr.eu-west-3.amazonaws.com/infoline-api:<IMAGE_TAG>
+          imagePullPolicy: Always
+          ports:
+            - name: http
+              containerPort: 8080 # EXPOSE 8080 dans le dockerfile
+          envFrom:
+            - configMapRef:
+                name: infoline-backend-config
+            - secretRef:
+                name: infoline-backend-db
+          resources:
+            # Dimensionné pour des nodes t3.small (2 vCPU / 2Gi) partagés entre plusieurs pods
+            requests:
+              cpu: "200m"
+              memory: "384Mi"
+            limits:
+              cpu: "500m"
+              memory: "768Mi"
+          # NB: pas de spring-boot-starter-actuator dans le pom.xml -> pas de /actuator/health.
+          # Probes TCP en attendant l'ajout de l'actuator (recommandé) pour des probes HTTP réelles.
+          readinessProbe:
+            tcpSocket:
+              port: 8080
+            initialDelaySeconds: 15
+            periodSeconds: 10
+            failureThreshold: 3
+          livenessProbe:
+            tcpSocket:
+              port: 8080
+            initialDelaySeconds: 30
+            periodSeconds: 20
+            failureThreshold: 3
+      restartPolicy: Always
+ 
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: infoline-backend
+  namespace: infoline
+  labels:
+    app: infoline-backend
+spec:
+  type: ClusterIP
+  selector:
+    app: infoline-backend
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8080
+ 
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: infoline-backend-hpa
+  namespace: infoline
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: infoline-backend
+  # Bornes alignées sur min_size/max_size du node group EKS (EKS.tf)
+  minReplicas: 1
+  maxReplicas: 3
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 70
+          
