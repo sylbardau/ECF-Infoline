@@ -107,7 +107,7 @@ jobs:
         id: tf-outputs
         working-directory: ./Terraform
         run: |
-          terraform init
+          terraform init -reconfigure -input=false
           echo "db_host=$(terraform output -raw db_instance_endpoint | cut -d: -f1)" >> "$GITHUB_OUTPUT"
           echo "db_secret_arn=$(terraform output -raw db_instance_master_user_secret_arn)" >> "$GITHUB_OUTPUT"
 
