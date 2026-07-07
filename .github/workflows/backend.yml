@@ -133,7 +133,7 @@ jobs:
           sed \
             -e "s#965932218164.dkr.ecr.eu-west-3.amazonaws.com/infoline-api:<IMAGE_TAG>#${IMAGE}#" \
             -e "s#<DB_HOST>#${DB_HOST}#" \
-            k8s/backend-deployment.yaml | kubectl apply -f -
+            K8s/backend-deploy.yaml | kubectl apply -f -
  
       - name: Création/MAJ du Secret des identifiants RDS
         env:
