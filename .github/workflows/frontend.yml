@@ -74,7 +74,7 @@ jobs:
           IMAGE_TAG: ${{ github.sha }}
         run: |
           docker build \
-            -f Applications/Frontend/dockerfile \
+            -f Applications/Frontend/Dockerfile \
             -t "$IMAGE_NAME:$IMAGE_TAG" \
             -t "$IMAGE_NAME:latest" \
             Applications/Frontend
