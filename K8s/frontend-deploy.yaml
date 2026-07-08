@@ -1,0 +1,92 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: infoline-frontend
+  namespace: infoline
+  labels:
+    app: infoline-frontend
+spec:
+  replicas: 2 
+  selector:
+    matchLabels:
+      app: infoline-frontend
+  template:
+    metadata:
+      labels:
+        app: infoline-frontend
+    spec:
+      imagePullSecrets:
+        - name: ghcr-pull-secret
+      containers:
+        - name: frontend
+          image: ghcr.io/sylbardau/infoline-front:<IMAGE_TAG>
+          imagePullPolicy: Always
+          ports:
+            - name: http
+              containerPort: 80 # EXPOSE 80 dans le Dockerfile (nginx)
+          resources:
+            # Nginx sert du statique, besoins bien plus légers que le backend Spring Boot
+            requests:
+              cpu: "50m"
+              memory: "64Mi"
+            limits:
+              cpu: "200m"
+              memory: "128Mi"
+          # Nginx répond immédiatement sur "/", contrairement au backend on peut
+          # utiliser une vraie probe HTTP dès maintenant.
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            failureThreshold: 3
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 10
+            periodSeconds: 20
+            failureThreshold: 3
+      restartPolicy: Always
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: infoline-frontend
+  namespace: infoline
+  labels:
+    app: infoline-frontend
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-type: "nlb"
+spec:
+  type: LoadBalancer
+  selector:
+    app: infoline-frontend
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80
+
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: infoline-frontend-hpa
+  namespace: infoline
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: infoline-frontend
+  # Bornes alignées sur min_size/max_size du node group EKS (EKS.tf)
+  minReplicas: 1
+  maxReplicas: 3
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 70
