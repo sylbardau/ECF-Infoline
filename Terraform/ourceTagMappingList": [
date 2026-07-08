@@ -1,0 +1,1768 @@
+{
+    "ResourceTagMappingList": [
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:instance/i-062486a215bf084cc",
+            "Tags": [
+                {
+                    "Key": "aws:autoscaling:groupName",
+                    "Value": "eks-default-7717480c34f31f797b92f5f767-40cf8fc4-8ef6-0d92-3ec6-f96f4e6f95ea"
+                },
+                {
+                    "Key": "aws:ec2:fleet-id",
+                    "Value": "fleet-37a40b0e-f435-c39c-84b0-2c8acf30bb45"
+                },
+                {
+                    "Key": "kubernetes.io/cluster/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:version",
+                    "Value": "1"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-7717480c34f31f797b92f5f767"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/enabled",
+                    "Value": "true"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:id",
+                    "Value": "lt-0fe6119f0cf0a8b24"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:instance/i-0eab4ee45e75f3e2d",
+            "Tags": [
+                {
+                    "Key": "aws:autoscaling:groupName",
+                    "Value": "eks-default-583d0bb4b144e5cdf30369cd2a-accf8f2e-3ff5-51ae-e130-85ff103cf838"
+                },
+                {
+                    "Key": "aws:ec2:fleet-id",
+                    "Value": "fleet-95ac8904-7e97-411e-8412-24027b82b239"
+                },
+                {
+                    "Key": "kubernetes.io/cluster/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:version",
+                    "Value": "1"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-583d0bb4b144e5cdf30369cd2a"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/enabled",
+                    "Value": "true"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:id",
+                    "Value": "lt-0871beb9e451bdc75"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:instance/i-08649c236e0d151d0",
+            "Tags": [
+                {
+                    "Key": "aws:autoscaling:groupName",
+                    "Value": "eks-default-583d0bb4b144e5cdf30369cd2a-accf8f2e-3ff5-51ae-e130-85ff103cf838"
+                },
+                {
+                    "Key": "aws:ec2:fleet-id",
+                    "Value": "fleet-97b508a6-24ac-c614-0692-ad2ad2690c1e"
+                },
+                {
+                    "Key": "kubernetes.io/cluster/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:version",
+                    "Value": "1"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-583d0bb4b144e5cdf30369cd2a"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/enabled",
+                    "Value": "true"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:id",
+                    "Value": "lt-0871beb9e451bdc75"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:instance/i-0e3a3f6381e471e81",
+            "Tags": [
+                {
+                    "Key": "aws:autoscaling:groupName",
+                    "Value": "eks-default-552a6dfb843daf5bc8b402dd39-c2cf8fdf-260b-f76a-365a-ddd33ab47f6c"
+                },
+                {
+                    "Key": "aws:ec2:fleet-id",
+                    "Value": "fleet-ab3f9e37-1384-6cad-2e30-090ab2d143e8"
+                },
+                {
+                    "Key": "kubernetes.io/cluster/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:version",
+                    "Value": "1"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/enabled",
+                    "Value": "true"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:id",
+                    "Value": "lt-0620a2e6c0bc71139"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:instance/i-090c90fc1e66088a8",
+            "Tags": [
+                {
+                    "Key": "aws:autoscaling:groupName",
+                    "Value": "eks-default-552a6dfb843daf5bc8b402dd39-c2cf8fdf-260b-f76a-365a-ddd33ab47f6c"
+                },
+                {
+                    "Key": "aws:ec2:fleet-id",
+                    "Value": "fleet-8b3d9615-b984-4c8f-0e10-8980d5192275"
+                },
+                {
+                    "Key": "kubernetes.io/cluster/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:version",
+                    "Value": "1"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/enabled",
+                    "Value": "true"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:id",
+                    "Value": "lt-0620a2e6c0bc71139"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:network-interface/eni-02720dc236d45cdf1",
+            "Tags": [
+                {
+                    "Key": "eks:eni:owner",
+                    "Value": "amazon-vpc-cni"
+                },
+                {
+                    "Key": "node.k8s.amazonaws.com/instance_id",
+                    "Value": "i-0f77eb008526fe96a"
+                },
+                {
+                    "Key": "cluster.k8s.amazonaws.com/name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-49c920eb70207eee0cc3e96f99"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:network-interface/eni-081b1d9353bb9095e",
+            "Tags": [
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:network-interface/eni-061b85c3daebe0f2a",
+            "Tags": [
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:network-interface/eni-0c0e907e7d92a3315",
+            "Tags": [
+                {
+                    "Key": "eks:eni:owner",
+                    "Value": "amazon-vpc-cni"
+                },
+                {
+                    "Key": "node.k8s.amazonaws.com/instance_id",
+                    "Value": "i-090c90fc1e66088a8"
+                },
+                {
+                    "Key": "cluster.k8s.amazonaws.com/name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:network-interface/eni-0eb26008f8144043b",
+            "Tags": [
+                {
+                    "Key": "eks:eni:owner",
+                    "Value": "amazon-vpc-cni"
+                },
+                {
+                    "Key": "node.k8s.amazonaws.com/instance_id",
+                    "Value": "i-0f77eb008526fe96a"
+                },
+                {
+                    "Key": "node.k8s.amazonaws.com/createdAt",
+                    "Value": "2026-07-01T21:17:06Z"
+                },
+                {
+                    "Key": "cluster.k8s.amazonaws.com/name",
+                    "Value": "infoline-cluster"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:route-table/rtb-0e3776052a1f008bb",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-private"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:route-table/rtb-0a782998e479875a6",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:security-group/sg-0a8b1e8ded8c96ce0",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-cluster-cluster"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:security-group/sg-00e9788f88185b626",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:subnet/subnet-0774787f935383d5f",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-public-eu-west-3b"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:subnet/subnet-071cc8adfb8602a55",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-private-eu-west-3a"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:subnet/subnet-04ec0365546e3ae68",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-private-eu-west-3b"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:subnet/subnet-086a169f3db14e25d",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-public-eu-west-3b"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:subnet/subnet-00509b04c28cc61d3",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-private-eu-west-3b"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:volume/vol-0cef79e5e3c18281a",
+            "Tags": [
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:volume/vol-0be74647ad3979a2d",
+            "Tags": [
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:vpc/vpc-0867cbc1f22a440a9",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:eks:eu-west-3:965932218164:pod/infoline-cluster/kube-system/aws-node-sjxgp/2f0c43f5-c1bf-4ad3-82c3-660a6f93944d",
+            "Tags": [
+                {
+                    "Key": "controller-revision-hash",
+                    "Value": "6dc4b668fb"
+                },
+                {
+                    "Key": "app.kubernetes.io/name",
+                    "Value": "aws-node"
+                },
+                {
+                    "Key": "pod-template-generation",
+                    "Value": "1"
+                },
+                {
+                    "Key": "app.kubernetes.io/instance",
+                    "Value": "aws-vpc-cni"
+                },
+                {
+                    "Key": "k8s-app",
+                    "Value": "aws-node"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:eks:eu-west-3:965932218164:pod/infoline-cluster/kube-system/aws-node-d7w4v/bab2a6ab-7ddd-44fa-b554-f67551f26409",
+            "Tags": [
+                {
+                    "Key": "controller-revision-hash",
+                    "Value": "6dc4b668fb"
+                },
+                {
+                    "Key": "app.kubernetes.io/name",
+                    "Value": "aws-node"
+                },
+                {
+                    "Key": "pod-template-generation",
+                    "Value": "1"
+                },
+                {
+                    "Key": "topology.kubernetes.io/region",
+                    "Value": "eu-west-3"
+                },
+                {
+                    "Key": "topology.kubernetes.io/zone",
+                    "Value": "eu-west-3b"
+                },
+                {
+                    "Key": "app.kubernetes.io/instance",
+                    "Value": "aws-vpc-cni"
+                },
+                {
+                    "Key": "k8s-app",
+                    "Value": "aws-node"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:logs:eu-west-3:965932218164:log-group:/aws/eks/infoline-cluster/cluster",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "/aws/eks/infoline-cluster/cluster"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:rds:eu-west-3:965932218164:snapshot:infoline-db-snapshot",
+            "Tags": []
+        },
+        {
+            "ResourceARN": "arn:aws:secretsmanager:eu-west-3:965932218164:secret:rds!db-22c759ef-a887-4c79-9f24-7b38bfb237f3-kKguAL",
+            "Tags": [
+                {
+                    "Key": "aws:rds:primaryDBInstanceArn",
+                    "Value": "arn:aws:rds:eu-west-3:965932218164:db:infoline-db"
+                },
+                {
+                    "Key": "aws:secretsmanager:owningService",
+                    "Value": "rds"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:instance/i-0427e0dd68579a352",
+            "Tags": [
+                {
+                    "Key": "aws:autoscaling:groupName",
+                    "Value": "eks-default-552a6dfb843daf5bc8b402dd39-c2cf8fdf-260b-f76a-365a-ddd33ab47f6c"
+                },
+                {
+                    "Key": "aws:ec2:fleet-id",
+                    "Value": "fleet-b5978a8e-0684-663c-24b2-072200e7b2ec"
+                },
+                {
+                    "Key": "kubernetes.io/cluster/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:version",
+                    "Value": "1"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/enabled",
+                    "Value": "true"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:id",
+                    "Value": "lt-0620a2e6c0bc71139"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:instance/i-0f77eb008526fe96a",
+            "Tags": [
+                {
+                    "Key": "aws:autoscaling:groupName",
+                    "Value": "eks-default-49c920eb70207eee0cc3e96f99-0acf8f9a-d012-d8af-2680-cec4b17f9e28"
+                },
+                {
+                    "Key": "aws:ec2:fleet-id",
+                    "Value": "fleet-b71502a4-a686-e694-ac9a-07a0312a4358"
+                },
+                {
+                    "Key": "kubernetes.io/cluster/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:version",
+                    "Value": "1"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-49c920eb70207eee0cc3e96f99"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/enabled",
+                    "Value": "true"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:id",
+                    "Value": "lt-013f843b2b169d81e"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:instance/i-0bf968a9849376c7e",
+            "Tags": [
+                {
+                    "Key": "aws:autoscaling:groupName",
+                    "Value": "eks-default-552a6dfb843daf5bc8b402dd39-c2cf8fdf-260b-f76a-365a-ddd33ab47f6c"
+                },
+                {
+                    "Key": "aws:ec2:fleet-id",
+                    "Value": "fleet-ab1db63f-9384-4c0d-2e18-a1a882ac55cb"
+                },
+                {
+                    "Key": "kubernetes.io/cluster/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:version",
+                    "Value": "1"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/enabled",
+                    "Value": "true"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:id",
+                    "Value": "lt-0620a2e6c0bc71139"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:internet-gateway/igw-01113e428b6e359a6",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:launch-template/lt-0620a2e6c0bc71139",
+            "Tags": [
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:natgateway/nat-0bcb09f796e2fa7c6",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-eu-west-3a"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:natgateway/nat-0164578ecd367aad4",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-eu-west-3a"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:network-acl/acl-057ae36f0aca8f272",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:network-interface/eni-0a5081e7ad3a09d49",
+            "Tags": [
+                {
+                    "Key": "eks:eni:owner",
+                    "Value": "amazon-vpc-cni"
+                },
+                {
+                    "Key": "node.k8s.amazonaws.com/instance_id",
+                    "Value": "i-062486a215bf084cc"
+                },
+                {
+                    "Key": "cluster.k8s.amazonaws.com/name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-7717480c34f31f797b92f5f767"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:network-interface/eni-0134e9cda8e3fc10f",
+            "Tags": [
+                {
+                    "Key": "eks:eni:owner",
+                    "Value": "amazon-vpc-cni"
+                },
+                {
+                    "Key": "node.k8s.amazonaws.com/instance_id",
+                    "Value": "i-0d2bbac552478a067"
+                },
+                {
+                    "Key": "node.k8s.amazonaws.com/createdAt",
+                    "Value": "2026-07-01T22:15:10Z"
+                },
+                {
+                    "Key": "cluster.k8s.amazonaws.com/name",
+                    "Value": "infoline-cluster"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:network-interface/eni-057924a453bc9c809",
+            "Tags": [
+                {
+                    "Key": "eks:eni:owner",
+                    "Value": "amazon-vpc-cni"
+                },
+                {
+                    "Key": "node.k8s.amazonaws.com/instance_id",
+                    "Value": "i-0d2bbac552478a067"
+                },
+                {
+                    "Key": "cluster.k8s.amazonaws.com/name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:route-table/rtb-074d88df6a49911b2",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:subnet/subnet-0fa0ed0d1c4d58a53",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-private-eu-west-3b"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:subnet/subnet-021e7009871b4e0dd",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-public-eu-west-3b"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:volume/vol-0d41f896c613f4bff",
+            "Tags": [
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:vpc/vpc-0512ba330ffce4b83",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:eks:eu-west-3:965932218164:pod/infoline-cluster/kube-system/aws-node-c6rtv/97b5b4fc-fd1f-4733-ac1e-099058a8a918",
+            "Tags": [
+                {
+                    "Key": "controller-revision-hash",
+                    "Value": "6dc4b668fb"
+                },
+                {
+                    "Key": "app.kubernetes.io/name",
+                    "Value": "aws-node"
+                },
+                {
+                    "Key": "pod-template-generation",
+                    "Value": "1"
+                },
+                {
+                    "Key": "topology.kubernetes.io/region",
+                    "Value": "eu-west-3"
+                },
+                {
+                    "Key": "topology.kubernetes.io/zone",
+                    "Value": "eu-west-3a"
+                },
+                {
+                    "Key": "app.kubernetes.io/instance",
+                    "Value": "aws-vpc-cni"
+                },
+                {
+                    "Key": "k8s-app",
+                    "Value": "aws-node"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:eks:eu-west-3:965932218164:pod/infoline-cluster/kube-system/kube-proxy-px8sz/93ef9b8f-dccd-4ac7-b7bf-05699f18cc95",
+            "Tags": [
+                {
+                    "Key": "controller-revision-hash",
+                    "Value": "c7c8b4d58"
+                },
+                {
+                    "Key": "pod-template-generation",
+                    "Value": "1"
+                },
+                {
+                    "Key": "topology.kubernetes.io/region",
+                    "Value": "eu-west-3"
+                },
+                {
+                    "Key": "topology.kubernetes.io/zone",
+                    "Value": "eu-west-3a"
+                },
+                {
+                    "Key": "k8s-app",
+                    "Value": "kube-proxy"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:rds:eu-west-3:965932218164:pg:infoline-db-133265cc9538b3edd65a6a0d19",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-db"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:instance/i-0fdb55e9be446a4e1",
+            "Tags": [
+                {
+                    "Key": "aws:autoscaling:groupName",
+                    "Value": "eks-default-49c920eb70207eee0cc3e96f99-0acf8f9a-d012-d8af-2680-cec4b17f9e28"
+                },
+                {
+                    "Key": "aws:ec2:fleet-id",
+                    "Value": "fleet-0b953e9f-9b24-6625-ae98-23a0575efc20"
+                },
+                {
+                    "Key": "kubernetes.io/cluster/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:version",
+                    "Value": "1"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-49c920eb70207eee0cc3e96f99"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/enabled",
+                    "Value": "true"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:id",
+                    "Value": "lt-013f843b2b169d81e"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:instance/i-08bdb294758b51580",
+            "Tags": [
+                {
+                    "Key": "aws:autoscaling:groupName",
+                    "Value": "eks-default-7717480c34f31f797b92f5f767-40cf8fc4-8ef6-0d92-3ec6-f96f4e6f95ea"
+                },
+                {
+                    "Key": "aws:ec2:fleet-id",
+                    "Value": "fleet-bf868b2e-d4bd-6bb6-0c9a-2c026e94f969"
+                },
+                {
+                    "Key": "kubernetes.io/cluster/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:version",
+                    "Value": "1"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-7717480c34f31f797b92f5f767"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/enabled",
+                    "Value": "true"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:id",
+                    "Value": "lt-0fe6119f0cf0a8b24"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:instance/i-0fc9cee12b085f7d8",
+            "Tags": [
+                {
+                    "Key": "aws:autoscaling:groupName",
+                    "Value": "eks-default-552a6dfb843daf5bc8b402dd39-c2cf8fdf-260b-f76a-365a-ddd33ab47f6c"
+                },
+                {
+                    "Key": "aws:ec2:fleet-id",
+                    "Value": "fleet-a39f3e97-930e-c687-8610-090229925628"
+                },
+                {
+                    "Key": "kubernetes.io/cluster/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:version",
+                    "Value": "1"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/enabled",
+                    "Value": "true"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:id",
+                    "Value": "lt-0620a2e6c0bc71139"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:internet-gateway/igw-06ea6c90389f0d727",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:natgateway/nat-0a2da2e12b3986afb",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-eu-west-3a"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:network-interface/eni-0f5302cef806add31",
+            "Tags": [
+                {
+                    "Key": "eks:eni:owner",
+                    "Value": "amazon-vpc-cni"
+                },
+                {
+                    "Key": "node.k8s.amazonaws.com/instance_id",
+                    "Value": "i-08bdb294758b51580"
+                },
+                {
+                    "Key": "node.k8s.amazonaws.com/createdAt",
+                    "Value": "2026-07-01T21:18:22Z"
+                },
+                {
+                    "Key": "cluster.k8s.amazonaws.com/name",
+                    "Value": "infoline-cluster"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:network-interface/eni-080388b1f6e1e1491",
+            "Tags": [
+                {
+                    "Key": "eks:eni:owner",
+                    "Value": "amazon-vpc-cni"
+                },
+                {
+                    "Key": "node.k8s.amazonaws.com/instance_id",
+                    "Value": "i-062486a215bf084cc"
+                },
+                {
+                    "Key": "node.k8s.amazonaws.com/createdAt",
+                    "Value": "2026-07-01T21:17:21Z"
+                },
+                {
+                    "Key": "cluster.k8s.amazonaws.com/name",
+                    "Value": "infoline-cluster"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:network-interface/eni-0af237bedb89dc392",
+            "Tags": [
+                {
+                    "Key": "eks:eni:owner",
+                    "Value": "amazon-vpc-cni"
+                },
+                {
+                    "Key": "node.k8s.amazonaws.com/instance_id",
+                    "Value": "i-0bf968a9849376c7e"
+                },
+                {
+                    "Key": "cluster.k8s.amazonaws.com/name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:route-table/rtb-0dbe83f2b0043b22e",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-private"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:route-table/rtb-0031c88ff494a8e1a",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-public"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:security-group/sg-0cfa3ba4832a87452",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:security-group/sg-0a3bc756839c68772",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-cluster-cluster"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:subnet/subnet-0ca7ffa22b5ca297d",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-public-eu-west-3a"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:subnet/subnet-0568a3fefcfbbc9a0",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-public-eu-west-3a"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:volume/vol-0d5bd90995f3e171b",
+            "Tags": [
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:volume/vol-07dfb5365b3e4d2d4",
+            "Tags": [
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:eks:eu-west-3:965932218164:pod/infoline-cluster/kube-system/aws-node-cbsxs/c625179f-5555-460a-a5e8-36c356bd4331",
+            "Tags": [
+                {
+                    "Key": "controller-revision-hash",
+                    "Value": "6dc4b668fb"
+                },
+                {
+                    "Key": "app.kubernetes.io/name",
+                    "Value": "aws-node"
+                },
+                {
+                    "Key": "pod-template-generation",
+                    "Value": "1"
+                },
+                {
+                    "Key": "app.kubernetes.io/instance",
+                    "Value": "aws-vpc-cni"
+                },
+                {
+                    "Key": "k8s-app",
+                    "Value": "aws-node"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:eks:eu-west-3:965932218164:pod/infoline-cluster/kube-system/coredns-57977d4d5f-wfmkq/9a6053fd-b579-47a6-bf87-f76610f4201d",
+            "Tags": [
+                {
+                    "Key": "eks.amazonaws.com/component",
+                    "Value": "coredns"
+                },
+                {
+                    "Key": "pod-template-hash",
+                    "Value": "57977d4d5f"
+                },
+                {
+                    "Key": "k8s-app",
+                    "Value": "kube-dns"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:eks:eu-west-3:965932218164:pod/infoline-cluster/kube-system/kube-proxy-nf5dn/a96d1266-4885-4b42-b8b3-8a7270be92a9",
+            "Tags": [
+                {
+                    "Key": "controller-revision-hash",
+                    "Value": "c7c8b4d58"
+                },
+                {
+                    "Key": "pod-template-generation",
+                    "Value": "1"
+                },
+                {
+                    "Key": "topology.kubernetes.io/region",
+                    "Value": "eu-west-3"
+                },
+                {
+                    "Key": "topology.kubernetes.io/zone",
+                    "Value": "eu-west-3b"
+                },
+                {
+                    "Key": "k8s-app",
+                    "Value": "kube-proxy"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:rds:eu-west-3:965932218164:pg:infoline-db-27c9538f74bfbdf3ee20cfca41",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-db"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:instance/i-0910a3c0583629f6f",
+            "Tags": [
+                {
+                    "Key": "aws:autoscaling:groupName",
+                    "Value": "eks-default-552a6dfb843daf5bc8b402dd39-c2cf8fdf-260b-f76a-365a-ddd33ab47f6c"
+                },
+                {
+                    "Key": "aws:ec2:fleet-id",
+                    "Value": "fleet-ab1f3c3d-1126-46af-8c3a-09a83cc317b2"
+                },
+                {
+                    "Key": "kubernetes.io/cluster/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:version",
+                    "Value": "1"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/enabled",
+                    "Value": "true"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:id",
+                    "Value": "lt-0620a2e6c0bc71139"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:instance/i-00aa2d17c72882fb3",
+            "Tags": [
+                {
+                    "Key": "aws:autoscaling:groupName",
+                    "Value": "eks-default-201cc18367b3c0425fde5270b7-30cf8f4c-c34d-8deb-5d79-d14106ea30f2"
+                },
+                {
+                    "Key": "aws:ec2:fleet-id",
+                    "Value": "fleet-9506a98e-541d-4b16-ae92-0602f173f2a8"
+                },
+                {
+                    "Key": "kubernetes.io/cluster/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:version",
+                    "Value": "1"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-201cc18367b3c0425fde5270b7"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/enabled",
+                    "Value": "true"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:id",
+                    "Value": "lt-09385702d1f7b7976"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:instance/i-0d2bbac552478a067",
+            "Tags": [
+                {
+                    "Key": "aws:autoscaling:groupName",
+                    "Value": "eks-default-552a6dfb843daf5bc8b402dd39-c2cf8fdf-260b-f76a-365a-ddd33ab47f6c"
+                },
+                {
+                    "Key": "aws:ec2:fleet-id",
+                    "Value": "fleet-3f2e0386-7c35-411c-2cb0-840a30416965"
+                },
+                {
+                    "Key": "kubernetes.io/cluster/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:version",
+                    "Value": "1"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/enabled",
+                    "Value": "true"
+                },
+                {
+                    "Key": "k8s.io/cluster-autoscaler/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "aws:ec2launchtemplate:id",
+                    "Value": "lt-0620a2e6c0bc71139"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:network-acl/acl-02e2c0e574b860b5b",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:network-interface/eni-098f665507ad211b7",
+            "Tags": [
+                {
+                    "Key": "eks:eni:owner",
+                    "Value": "amazon-vpc-cni"
+                },
+                {
+                    "Key": "node.k8s.amazonaws.com/instance_id",
+                    "Value": "i-090c90fc1e66088a8"
+                },
+                {
+                    "Key": "node.k8s.amazonaws.com/createdAt",
+                    "Value": "2026-07-01T23:15:07Z"
+                },
+                {
+                    "Key": "cluster.k8s.amazonaws.com/name",
+                    "Value": "infoline-cluster"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:network-interface/eni-0af20e021b0d7a3d1",
+            "Tags": [
+                {
+                    "Key": "eks:eni:owner",
+                    "Value": "amazon-vpc-cni"
+                },
+                {
+                    "Key": "node.k8s.amazonaws.com/instance_id",
+                    "Value": "i-0bf968a9849376c7e"
+                },
+                {
+                    "Key": "node.k8s.amazonaws.com/createdAt",
+                    "Value": "2026-07-01T23:17:12Z"
+                },
+                {
+                    "Key": "cluster.k8s.amazonaws.com/name",
+                    "Value": "infoline-cluster"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:network-interface/eni-05b3f3ff43ad60664",
+            "Tags": [
+                {
+                    "Key": "eks:eni:owner",
+                    "Value": "amazon-vpc-cni"
+                },
+                {
+                    "Key": "node.k8s.amazonaws.com/instance_id",
+                    "Value": "i-0e3a3f6381e471e81"
+                },
+                {
+                    "Key": "node.k8s.amazonaws.com/createdAt",
+                    "Value": "2026-07-01T22:15:11Z"
+                },
+                {
+                    "Key": "cluster.k8s.amazonaws.com/name",
+                    "Value": "infoline-cluster"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:network-interface/eni-076e5b06349ee8e5c",
+            "Tags": [
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:network-interface/eni-00133659fe4d7e9f1",
+            "Tags": [
+                {
+                    "Key": "eks:eni:owner",
+                    "Value": "amazon-vpc-cni"
+                },
+                {
+                    "Key": "node.k8s.amazonaws.com/instance_id",
+                    "Value": "i-0e3a3f6381e471e81"
+                },
+                {
+                    "Key": "cluster.k8s.amazonaws.com/name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:route-table/rtb-0d49b205094fb65bc",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-public"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:security-group/sg-07fcb5d666dbfc830",
+            "Tags": [
+                {
+                    "Key": "kubernetes.io/cluster/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "aws:eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "eks-cluster-sg-infoline-cluster-936951601"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:security-group/sg-0fe74faf0e1eafa9e",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:security-group/sg-02dda06f97cd53b88",
+            "Tags": [
+                {
+                    "Key": "kubernetes.io/cluster/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "infoline-cluster-node"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:security-group/sg-099f1f4cb8897b831",
+            "Tags": [
+                {
+                    "Key": "kubernetes.io/cluster/infoline-cluster",
+                    "Value": "owned"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "infoline-cluster-node"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:subnet/subnet-025f55a930b1f0e76",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-private-eu-west-3a"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:subnet/subnet-086d3a5356caef69f",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-vpc-private-eu-west-3b"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:volume/vol-06d433a1e13f8b8a9",
+            "Tags": [
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:eu-west-3:965932218164:volume/vol-0069d514f92782854",
+            "Tags": [
+                {
+                    "Key": "eks:cluster-name",
+                    "Value": "infoline-cluster"
+                },
+                {
+                    "Key": "eks:nodegroup-name",
+                    "Value": "default-552a6dfb843daf5bc8b402dd39"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:eks:eu-west-3:965932218164:nodegroup/infoline-cluster/default-552a6dfb843daf5bc8b402dd39/c2cf8fdf-260b-f76a-365a-ddd33ab47f6c",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "default"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:eks:eu-west-3:965932218164:pod/infoline-cluster/kube-system/kube-proxy-8vl8q/31095109-8d7c-40ba-91f8-5fdba7c532f3",
+            "Tags": [
+                {
+                    "Key": "controller-revision-hash",
+                    "Value": "c7c8b4d58"
+                },
+                {
+                    "Key": "pod-template-generation",
+                    "Value": "1"
+                },
+                {
+                    "Key": "k8s-app",
+                    "Value": "kube-proxy"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:eks:eu-west-3:965932218164:pod/infoline-cluster/kube-system/aws-node-jszcz/5ff365a6-eb13-479f-9105-76fba57b07b5",
+            "Tags": [
+                {
+                    "Key": "controller-revision-hash",
+                    "Value": "6dc4b668fb"
+                },
+                {
+                    "Key": "app.kubernetes.io/name",
+                    "Value": "aws-node"
+                },
+                {
+                    "Key": "pod-template-generation",
+                    "Value": "1"
+                },
+                {
+                    "Key": "app.kubernetes.io/instance",
+                    "Value": "aws-vpc-cni"
+                },
+                {
+                    "Key": "k8s-app",
+                    "Value": "aws-node"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:eks:eu-west-3:965932218164:pod/infoline-cluster/kube-system/coredns-57977d4d5f-mtjtv/f825a634-82fb-4e88-bf92-c6e42b9159e3",
+            "Tags": [
+                {
+                    "Key": "eks.amazonaws.com/component",
+                    "Value": "coredns"
+                },
+                {
+                    "Key": "pod-template-hash",
+                    "Value": "57977d4d5f"
+                },
+                {
+                    "Key": "k8s-app",
+                    "Value": "kube-dns"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:events:eu-west-3:965932218164:rule/AutoScalingManagedRule",
+            "Tags": []
+        },
+        {
+            "ResourceARN": "arn:aws:rds:eu-west-3:965932218164:pg:infoline-db-15713179cb8d32cd92074a2a00",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "infoline-db"
+                }
+            ]
+        }
+    ]
+}

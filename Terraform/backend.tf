@@ -5,5 +5,10 @@ terraform {
     region         = "eu-west-3"
     use_lockfile = true
     encrypt        = true
+    bucket       = "ecf-infoline-965932218164"
+    key          = "prod/terraform.tfstate"
+    region       = "eu-west-3"
+    use_lockfile = true
+    encrypt      = true
   }
 }
