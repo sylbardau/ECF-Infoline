@@ -1,0 +1,33 @@
+apiVersion: kibana.k8s.elastic.co/v1
+kind: Kibana
+metadata:
+  name: infoline-kb
+  namespace: infoline
+spec:
+  version: 8.13.0
+  count: 1
+  elasticsearchRef:
+    name: infoline-es
+  podTemplate:
+    spec:
+      containers:
+        - name: kibana
+          env:
+            - name: NODE_OPTIONS
+              value: "--max-old-space-size=460"
+          resources:
+            requests:
+              memory: 512Mi
+              cpu: 200m
+            limits:
+              memory: 700Mi
+              cpu: 500m
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchExpressions:
+                  - key: common.k8s.elastic.co/type
+                    operator: In
+                    values: ["elasticsearch"]
+              topologyKey: kubernetes.io/hostname
