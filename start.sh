@@ -58,9 +58,44 @@ deploy_elasticsearch() {
 deploy_kibana() {
   echo ">>> 5. Déploiement Kibana..."
   kubectl apply -f K8s/kibana.yaml
-  wait_for_health kibana infoline-kb
+  if [ $? -ne 0 ]; then
+    echo ">>> ERREUR : application du manifest kibana.yaml échouée. Arrêt du script."
+    exit 1
+  fi
+  if ! wait_for_health kibana infoline-kb; then
+    echo ">>> ERREUR : Kibana n'est pas prêt. Arrêt du script."
+    kubectl get pods -n "$NAMESPACE"
+    exit 1
+  fi
 }
 
+PF_LOG="/tmp/infoline-kibana-portforward.log"
+PF_PID_FILE="/tmp/infoline-kibana-portforward.pid"
+ 
+start_port_forward() {
+  echo ">>> 6. Lancement du port-forward Kibana en arrière-plan..."
+ 
+  # tue un éventuel port-forward déjà en cours sur ce service pour éviter les conflits
+  if [ -f "$PF_PID_FILE" ] && kill -0 "$(cat "$PF_PID_FILE")" 2>/dev/null; then
+    echo "    Port-forward déjà actif (PID $(cat "$PF_PID_FILE")), arrêt avant relance."
+    kill "$(cat "$PF_PID_FILE")" 2>/dev/null
+    sleep 1
+  fi
+ 
+  nohup kubectl port-forward -n "$NAMESPACE" svc/infoline-kb-kb-http 5601:5601 \
+    > "$PF_LOG" 2>&1 &
+  echo $! > "$PF_PID_FILE"
+  sleep 2
+ 
+  if kill -0 "$(cat "$PF_PID_FILE")" 2>/dev/null; then
+    echo ">>> Port-forward actif (PID $(cat "$PF_PID_FILE"))."
+  else
+    echo ">>> ERREUR : le port-forward n'a pas démarré. Voir $PF_LOG :"
+    cat "$PF_LOG"
+    exit 1
+  fi
+}
+ 
 print_credentials() {
   echo ">>> Mot de passe utilisateur 'elastic' :"
   kubectl get secret infoline-es-es-elastic-user -n "$NAMESPACE" \
@@ -81,6 +116,7 @@ main() {
   deploy_elasticsearch
   deploy_kibana
   kubectl get pods -n "$NAMESPACE"
+  start_port_forward
   print_credentials
   print_access_info
 }
