@@ -7,12 +7,12 @@ RUN npm ci
 
 COPY . .
 RUN npm run build 
-
+RUN ls -la /Frontend/dist && ls -la /Frontend/dist/*
 # Image de runtime
 FROM nginx:1.27-alpine
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY --from=build /Frontend/dist/Frontend /usr/share/nginx/html
+COPY --from=build /Frontend/dist/Frontend/browser /usr/share/nginx/html
 
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
